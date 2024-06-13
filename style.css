@@ -1,0 +1,58 @@
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    grid-column: span 3;
+    margin: 0;
+}
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 0.5fr 4fr 1fr;
+} 
+#chatsvg{
+    padding: 0.5%;
+    height: 80%;
+}   
+.left{
+    background-color: red;
+    grid-row: span 2;
+    margin-top: 0;
+}
+.right{
+    background-color: blue;
+    grid-row: span 2;
+}
+.box{
+    background-color: aqua;
+    overflow: auto;
+}
+.area{
+    background-color: greenyellow;
+    display: flex;
+    
+}
+.chat{
+    border: 5px solid black;
+}
+.message{
+    background-color: white;
+    border: 1px solid black;
+    height: 80%;
+    flex-basis: 85%;
+    border-radius: 4%; 
+    margin:1%;
+}
+#send{
+    height: 50%;
+    width: 10%;
+    margin: 1.75% ;
+    border-radius: 20%;
+}
+#messageInput {
+    width: calc(100% - 60px); 
+    padding: 10px;
+    margin-right: 10px;
+}
